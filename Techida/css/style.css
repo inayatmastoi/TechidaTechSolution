@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+
+.logo {
+  max-width: 300%;
+  max-height: 100vh;
+  width: 150px;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 17px;
+  font-family: "Lato", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.btn-1 {
+  padding: 12px 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-2 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 56px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #000000;
+  font-family: Outfit, sans-serif;
+  --border: 2px;
+  --slant: 0.7em;
+  --color: #53cf7f;
+  background: linear-gradient(to bottom left, var(--color) 50%, #0000 50.1%) 100% 0, linear-gradient(to top right, var(--color) 50%, #0000 50.1%) 0 100%;
+  background-repeat: no-repeat;
+  background-size: calc(var(--slant) + var(--border)* 1.3) calc(var(--slant) + var(--border)* 1.3);
+  border: none;
+  box-shadow: 0 0 0 200px inset #0000, 0 0 0 var(--border) inset var(--color);
+  box-shadow: 0 0 0 200px inset var(--s, #0000), 0 0 0 var(--border) inset var(--color);
+  -webkit-clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant), 100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
+  clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant), 100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  height: auto;
+  transition: color .3s, background-size .3s;
+  transition: color var(--t, .3s), background-size .3s;
+  width: 210px;
+}
+
+.btn-2:before,
+.btn-2:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.btn-2:before {
+  right: -50px;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #8cd88c;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.btn-2:after {
+  left: -50px;
+  border-left: 50px solid transparent;
+  border-top: 80px solid #8cd88c;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+.btn-2:hover:before {
+  transform: translateX(-49%);
+}
+
+.btn-2:hover:after {
+  transform: translateX(49%);
+}
+
+.card-title {
+
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+}
+
+.content_text {
+  font-family: Outfit, sans-serif;
+  font-weight: bold;
+  color: grey;
+
+}
+
+.navbar {
+  background-color: #f0f8ff;
+  box-shadow: 0 3px 6px #00000029, 0 3px 6px #0000003b;
+  font-family: Outfit, sans-serif;
+  font-weight: 700;
+  padding: 10px 100px;
+}
+
+.svg-1 {
+  justify-items: center;
+  width: 350px;
+  color: #1fa84f;
+
+}
+
+.card-title-1 {
+  font-size: 36px;
+  text-align: center;
+
+}
+
+.span-1 {
+  font-weight: bold;
+  width: 50px;
+}
+
+.card {
+  padding: 12px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.item-1-2 {
+  text-align: center;
+}
+
+.item-a {
+  padding-top: 60px;
+  align-items: center;
+  color: #1fa84f;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  justify-content: center;
+  margin: 5px auto auto;
+  pointer-events: none;
+  position: relative;
+  z-index: 5;
+}
+
+.item-b {
+  color: #1fa84f;
+}
+
+.card-b {
+  font-size: 35px;
+  padding-top: 12px;
+}
+
+.card-c {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.card-d {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.content_text-a {
+  font-weight: 600;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper a {
+  display: block;
+  line-height: 40px;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-decoration: none;
+  letter-spacing: -1px;
+  text-align: center;
+  font-weight: bold;
+  border: .2rem solid #1fa84f;
+  border-image: conic-gradient(from 90deg, #a8efff1a, #1fa84f 36deg, #1fa84f 54deg, #a8efff1a 90deg) 30;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 36deg, var(--c1) 54deg, var(--c2) 90deg) 30;
+  margin: 10px;
+  background-color: #f0f8ff;
+  color: #000;
+  height: 80px;
+  overflow: hidden;
+  padding: 18px 37px 13px 1px;
+    position: relative;
+  transition: color .3s ease;
+  width: 260px;
+}
+
+.wrapper a span {
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #1fa84f;
+  transition: all .35s;
+}
+
+.wrapper a:hover {
+  color: #fff;
+}
+
+.wrapper a:hover:after {
+  width: 100%;
+}
+
+.wrapper-2 {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-image: conic-gradient(from 90deg, #a8efff1a, #1fa84f 36deg, #1fa84f 54deg, #a8efff1a 90deg) 30;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 36deg, var(--c1) 54deg, var(--c2) 90deg) 30;
+  background-color: #f0f8ff;
+  color: #000;
+  border: #1fa84f;
+  padding: 15px;
+  position: relative;
+  transition: color .3s ease;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.wrapper-2 span {
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper-2:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 75vh;
+  background-color: rgba(30, 236, 102, 0.5);
+  transition: all .3s;
+  border-radius: 10px;
+}
+
+.wrapper-2:hover {
+  color: #000000;
+}
+
+.wrapper-2:hover:after {
+  width: 100%;
+}
+
+
+.brand_experience {
+  background-color: #024429;
+  padding: 40px;
+  color: #f0f8ff;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.heading {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .centerer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper {
+    margin: 10px 0;
+  }
+
+  .wrapper a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper a {
+    width: 310px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper a {
+    width: 290px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .wrapper a {
+    width: 280px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper a {
+    width: 260px;
+  }
+
+}
